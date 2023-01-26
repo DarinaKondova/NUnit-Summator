@@ -13,24 +13,26 @@ namespace Summator
         {
             int sum = arr[0];
 
-            for (int i=1; i<arr.Length; i++)
+            for (int i = 1; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
             return sum;
         }
-    }
+        
         //Here is the sample test
+
         public static void Test_SumTwoNumbers()
         {
             if (Sum(new int[] { 1, 2 }) != 3)
             {
-                 throw new Exception("1+2 != 3");
-            } else
-            {
-                 Console.WriteLine("Test Pass!");
+                throw new Exception("1+2 != 3");
             }
-            
-        }
+            else
+            {
+                Console.WriteLine("Test Pass!");
+            }
 
+        }
+    }
 }
