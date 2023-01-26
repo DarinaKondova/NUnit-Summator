@@ -9,17 +9,27 @@ namespace Summator
     public static class Summator
     {
         //Test method for sum of array from numbers
-        public static int Sum(int[] arr)
+        public static long Sum(int[] arr)
         {
-            int sum = arr[0];
+            long sum = 0;
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
             return sum;
         }
-        
+
+        public static double Average(int[] arr)
+        {
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            return sum/arr.Length;
+        }
         //Here is the sample test
 
         public static void Test_SumTwoNumbers()
